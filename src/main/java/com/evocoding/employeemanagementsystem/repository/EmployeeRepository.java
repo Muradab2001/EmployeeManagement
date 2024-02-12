@@ -1,7 +1,8 @@
-package evo.employeeManagement.repository;
+package com.evocoding.employeemanagementsystem.repository;
 
-import evo.employeeManagement.repository.entity.Employee;
+import com.evocoding.employeemanagementsystem.repository.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 import java.util.Optional;

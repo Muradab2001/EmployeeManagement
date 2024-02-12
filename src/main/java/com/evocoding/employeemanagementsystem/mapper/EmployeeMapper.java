@@ -1,10 +1,10 @@
-package evo.employeeManagement.mapper;
+package com.evocoding.employeemanagementsystem.mapper;
 
 
-import evo.employeeManagement.repository.entity.Employee;
-import evo.employeeManagement.service.dto.CreateEmployeeDTO;
-import evo.employeeManagement.service.dto.EmployeDTO;
-import evo.employeeManagement.service.dto.UpdateEmployeeDTO;
+import com.evocoding.employeemanagementsystem.service.dto.CreateEmployeeDTO;
+import com.evocoding.employeemanagementsystem.service.dto.EmployeDTO;
+import com.evocoding.employeemanagementsystem.service.dto.UpdateEmployeeDTO;
+import com.evocoding.employeemanagementsystem.repository.entity.Employee;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 

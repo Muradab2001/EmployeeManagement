@@ -1,11 +1,11 @@
-package evo.employeeManagement.service.dto;
+package com.evocoding.employeemanagementsystem.service.dto;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class CreateEmployeeDTO {
+public class UpdateEmployeeDTO {
     private String name;
     private String position;
 }

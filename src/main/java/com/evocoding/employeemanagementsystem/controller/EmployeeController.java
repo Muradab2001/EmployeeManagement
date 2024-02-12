@@ -1,25 +1,22 @@
-package evo.employeeManagement.controller;
+package com.evocoding.employeemanagementsystem.controller;
 
-import evo.employeeManagement.repository.entity.Employee;
-import evo.employeeManagement.service.EmployeeService;
-import evo.employeeManagement.service.dto.CreateEmployeeDTO;
-import evo.employeeManagement.service.dto.EmployeDTO;
-import evo.employeeManagement.service.dto.UpdateEmployeeDTO;
+import com.evocoding.employeemanagementsystem.service.EmployeeService;
+import com.evocoding.employeemanagementsystem.service.dto.CreateEmployeeDTO;
+import com.evocoding.employeemanagementsystem.service.dto.EmployeDTO;
+import com.evocoding.employeemanagementsystem.service.dto.UpdateEmployeeDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.ResourceBundle;
 
 @RestController
 @RequestMapping("/api/v1/employees")
 @RequiredArgsConstructor
 public class EmployeeController {
+
     private final EmployeeService service;
-
-
 
     @GetMapping
     public ResponseEntity<List<EmployeDTO>> findAll() {

@@ -1,12 +1,12 @@
-package evo.employeeManagement.service;
+package com.evocoding.employeemanagementsystem.service;
 
-import evo.employeeManagement.exception.EmployeeNotFoundException;
-import evo.employeeManagement.mapper.EmployeeMapper;
-import evo.employeeManagement.repository.EmployeeRepository;
-import evo.employeeManagement.repository.entity.Employee;
-import evo.employeeManagement.service.dto.CreateEmployeeDTO;
-import evo.employeeManagement.service.dto.EmployeDTO;
-import evo.employeeManagement.service.dto.UpdateEmployeeDTO;
+import com.evocoding.employeemanagementsystem.exception.EmployeeNotFoundException;
+import com.evocoding.employeemanagementsystem.mapper.EmployeeMapper;
+import com.evocoding.employeemanagementsystem.repository.EmployeeRepository;
+import com.evocoding.employeemanagementsystem.service.dto.CreateEmployeeDTO;
+import com.evocoding.employeemanagementsystem.service.dto.EmployeDTO;
+import com.evocoding.employeemanagementsystem.service.dto.UpdateEmployeeDTO;
+import com.evocoding.employeemanagementsystem.repository.entity.Employee;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class EmployeeService {
 
-    private final  EmployeeRepository employeeRepository;
+    private final EmployeeRepository employeeRepository;
     private final EmployeeMapper employeeMapper;
 
     public List<EmployeDTO> findAll() {

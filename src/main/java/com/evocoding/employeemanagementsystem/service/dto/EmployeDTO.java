@@ -1,4 +1,4 @@
-package evo.employeeManagement.service.dto;
+package com.evocoding.employeemanagementsystem.service.dto;
 
 import lombok.Getter;
 import lombok.Setter;
